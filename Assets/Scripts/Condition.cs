@@ -34,16 +34,22 @@ public class Condition
             return false;
         }
         
-        if (!RequiredDialogues.All(DialogueController.GetVisited))
+        if (RequiredDialogues.Length > 0 && !RequiredDialogues.All(DialogueController.GetVisited))
         {
             return false;
         }
         
-        if (ExclusiveDialogues.Any(DialogueController.GetVisited))
+        if (ExclusiveDialogues.Length > 0 && ExclusiveDialogues.Any(DialogueController.GetVisited))
         {
             return false;
         }
         
-        return conditions.All(condition => condition.CheckCondition());
+        foreach(var condition in conditions)
+        {
+            if (!condition.CheckCondition())
+                return false;
+        }
+
+        return true;
     }
 }

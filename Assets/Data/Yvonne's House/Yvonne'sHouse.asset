@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f115394aa9403a8b2bbaf4b8774cba, type: 3}
   m_Name: Yvonne'sHouse
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 6568e97ae1a1cc84cbec310f1b8028ef, type: 2}
+  mailData:
+  - {fileID: 11400000, guid: d35612869aea8bf4b97c8d45c8c8fc8d, type: 2}

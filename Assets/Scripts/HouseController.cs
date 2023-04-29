@@ -14,7 +14,7 @@ public class HouseController : MonoBehaviour
         set
         {
             _wasDelivered = value;
-            mailUI.SetActive(false);
+            mailUI.SetActive(!value);
         }
     }
     
@@ -25,7 +25,7 @@ public class HouseController : MonoBehaviour
         set
         {
             _wasSpokenTo = value;
-            speakUI.SetActive(false);
+            speakUI.SetActive(!value);
         }
     }
     
@@ -38,7 +38,7 @@ public class HouseController : MonoBehaviour
         wasDelivered = houseData.GetMail() == null;
     }
 
-    public void Deliver()
+    public void StartDelivering()
     {
         DialogueHasStarted = true;
         HouseManager.InteractWithHouse(this);

@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e99936994fd7903448bb5ed2bca211ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 1766689666852885005}
+  activatorRenderer: {fileID: 1766689666852885005}
   house: {fileID: 4058259177359526572}
 --- !u!4 &634908835840092514 stripped
 Transform:

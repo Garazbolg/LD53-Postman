@@ -16,6 +16,11 @@ MonoBehaviour:
   DialogueID: YvonneFirstEncounter
   Characters:
   - {fileID: 11400000, guid: 19f0f94f0b116794fad134776bdd0082, type: 2}
+  disableDialogueOnLeave: 0
+  charactersLeaveAfterDialogue: 0
+  charactersAppearOnDelivery: 0
+  startDialogueOnDelivery: 0
+  canRepeat: 0
   priority: 0
   condition:
     project: {fileID: 7545569452688597077, guid: f0d87f1ff09a31641a6a0f93a9189728,
@@ -24,7 +29,7 @@ MonoBehaviour:
     ExclusiveDialogues: []
     targetAge: 0
     minDay: 0
-    maxDay: 0
+    maxDay: 7
     conditions: []
   references:
     version: 2

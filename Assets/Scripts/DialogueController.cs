@@ -58,22 +58,27 @@ public class DialogueController : MonoBehaviour
     
     public static bool GetVisited(string dialogueID)
     {
-        var formattedString = $"";
+        var formattedString = $"$Yarn.Internal.FakeVisiting.{dialogueID}";
         instance.variableStorage.TryGetValue(formattedString,out float value);
         return value > 0;
     }
 
     public static bool GetDelivered(MailData mail)
     {
-        var formattedString = $"Delivered.{mail.name}";
+        var formattedString = $"$Delivered.{mail.name}";
         instance.variableStorage.TryGetValue(formattedString,out bool value);
         return value;
     }
 
     public static void SetDelivered(MailData mail, bool delivered)
     {
-        var formattedString = $"Delivered.{mail.name}";
+        var formattedString = $"$Delivered.{mail.name}";
         instance.variableStorage.SetValue(formattedString, delivered);
+    }
+
+    public static void StopDialogue()
+    {
+        instance.runner.Stop();
     }
     
     public static YarnProject Project => instance.project;

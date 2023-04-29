@@ -2,26 +2,27 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ActivationTrigger : MonoBehaviour
 {
-    public MeshRenderer renderer;
+    public MeshRenderer activatorRenderer;
     public HouseController house;
 
     [ContextMenu("Activate")]
     public void Activate()
     {
-        renderer.material.SetFloat("_CurrentTime",Time.time);
+        activatorRenderer.material.SetFloat("_CurrentTime",Time.time);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(house.CanDeliver) return;
+        if(!house.CanDeliver) return;
         
         var car = other.GetComponent<CarController>();
         if (car && car.GetComponent<Rigidbody>().velocity.magnitude < 0.001f)
         {
-            house.Deliver();
+            house.StartDelivering();
             Activate();
         }
     }

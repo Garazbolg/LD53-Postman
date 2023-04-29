@@ -11,6 +11,8 @@ public class HouseManager : MonoBehaviour
     public string deliverDialogueID;
     [YarnNode(nameof(project))]
     public string speakDialogueID;
+    [YarnNode(nameof(project))]
+    public string noneDialogueID;
     
     private HouseController _currentHouse;
     
@@ -26,44 +28,45 @@ public class HouseManager : MonoBehaviour
         if (!instance._currentHouse.wasSpokenTo)
         {
             var dialogue = house.houseData.GetDialogue();
-            DialogueController.SetStringVariable("characterName", dialogue.Characters[0].name);
-            DialogueController.SetStringVariable("dialogueToTrigger", dialogue.DialogueID);
+            DialogueController.SetStringVariable("$characterName", dialogue.Characters[0].name);
+            DialogueController.SetStringVariable("$dialogueToTrigger", dialogue.DialogueID);
         }
 
         var dialogueID = (instance._currentHouse.wasDelivered, instance._currentHouse.wasSpokenTo) switch
         {
-            (true, true) => instance.bothDialogueID,
-            (false, true) => instance.speakDialogueID,
-            (true, false) => instance.deliverDialogueID,
-            _ => instance.bothDialogueID
+            (false, false) => instance.bothDialogueID,
+            (true, false) => instance.speakDialogueID,
+            (false, true) => instance.deliverDialogueID,
+            _ => instance.noneDialogueID,
         };
         DialogueController.StartDialogue(dialogueID);
     }
 
     [YarnCommand("deliver")]
-    public void Deliver()
+    public static void Deliver()
     {
-        _currentHouse.wasDelivered = true;
+        instance._currentHouse.wasDelivered = true;
         DialogueController.SetDelivered(instance._currentHouse.houseData.GetMail(),true);
     }
 
     [YarnCommand("spoken")]
-    public void Spoken()
+    public static void Spoken()
     {
-        _currentHouse.wasSpokenTo = true;
+        instance._currentHouse.wasSpokenTo = true;
     }
     
     [YarnCommand("leave")]
-    public void Leave()
+    public static void Leave()
     {
-        _currentHouse = null;
+        instance._currentHouse = null;
     }
 
     public void OnDialogueEnd()
     {
+        DialogueController.StopDialogue();
         if(_currentHouse == null) return;
 
-        if (instance._currentHouse.wasDelivered || instance._currentHouse.wasSpokenTo)
+        if (!instance._currentHouse.wasDelivered || !instance._currentHouse.wasSpokenTo)
         {
             InteractWithHouse(_currentHouse);
         }        

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ff0b6cdea34523a4c2cc6d0054c040, type: 3}
   m_Name: YvonneFirstMail
   m_EditorClassIdentifier: 
-  from: 
-  to: 
-  signature: 
-  body: 
-  subject: 
+  from: EDF
+  to: Yvonne
+  signature: The boss
+  body: Yo bitch you owe us Money
+  subject: Bill
   attachments: []
   canRepeat: 0
   priority: 0
