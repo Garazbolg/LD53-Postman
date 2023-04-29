@@ -1,0 +1,13 @@
+﻿title: YvonneFirstEncounter
+tags:
+---
+Yvonne: Hello there! I'm Yvonne, a chatbot. What's your name?
+PostMan: I'm PostMan.
+===
+
+title: YvonneGoodbye
+tags:
+---
+Yvonne: Goodbye, PostMan!
+PostMan: Goodbye, Yvonne!
+===

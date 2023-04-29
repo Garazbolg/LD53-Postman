@@ -1,0 +1,33 @@
+﻿title: BothDialogue
+tags:
+---
+What to do ?
+-> Speak to {$characterName}
+    <<spoken>>
+    <<jump {$dialogueToTrigger}>>
+-> Deliver Mail
+    <<deliver>>
+-> Leave
+    <<leave>>
+===
+
+title: DeliverDialogue
+tags:
+---
+What to do ?
+-> Deliver Mail
+    <<deliver>>
+-> Leave
+    <<leave>>
+===
+
+title: SpeakDialogue
+tags:
+---
+What to do ?
+-> Speak to {$characterName}
+    <<spoken>>
+    <<jump {$dialogueToTrigger}>>
+-> Leave
+    <<leave>>
+===

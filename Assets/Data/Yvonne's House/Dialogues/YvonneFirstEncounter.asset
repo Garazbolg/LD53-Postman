@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97735f3196047bfaaa2fec3d8734528, type: 3}
+  m_Name: YvonneFirstEncounter
+  m_EditorClassIdentifier: 
+  project: {fileID: 7545569452688597077, guid: f0d87f1ff09a31641a6a0f93a9189728, type: 3}
+  DialogueID: YvonneFirstEncounter
+  Characters:
+  - {fileID: 11400000, guid: 19f0f94f0b116794fad134776bdd0082, type: 2}
+  priority: 0
+  condition:
+    project: {fileID: 7545569452688597077, guid: f0d87f1ff09a31641a6a0f93a9189728,
+      type: 3}
+    RequiredDialogues: []
+    ExclusiveDialogues: []
+    targetAge: 0
+    minDay: 0
+    maxDay: 0
+    conditions: []
+  references:
+    version: 2
+    RefIds: []

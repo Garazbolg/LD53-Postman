@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: f0d87f1ff09a31641a6a0f93a9189728
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 053561912b1654d80a424bb0696a74ae, type: 3}
+  sourceScripts:
+  - {fileID: 6391573757903218779, guid: 2dd7950fc9562e04ca53f3615fa45c97, type: 3}
+  - {fileID: 6391573757903218779, guid: e49c97bcf032cc240965c1ff35fc5cc5, type: 3}
+  - {fileID: 6391573757903218779, guid: d219a1b3e6c7bfa46a2ff43f0c172eff, type: 3}
+  compileErrors:
+  - '5:13: Error: Can''t figure out the type of variable $characterName given its
+    context. Specify its type with a <<declare>> statement.
+
+    $characterName
+
+'
+  serializedDeclarations: []
+  defaultLanguage: fr-FR
+  languagesToSourceAssets: []
+  useAddressableAssets: 0

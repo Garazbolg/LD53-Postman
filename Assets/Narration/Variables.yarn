@@ -1,0 +1,5 @@
+title: Variables
+---
+<<declare $characterName to "Seth">>
+<<declare $dialogueToTrigger to "Dialog">>
+===
