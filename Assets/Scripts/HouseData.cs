@@ -6,6 +6,11 @@ public class HouseData : ScriptableObject
     public DialogueData[] dialogues;
     
     public MailData[] mailData;
+
+    [Header("Visuals")]
+    public Color roofColor;
+    public Color wallColor;
+    public Color mailBoxColor;
     
     public DialogueData GetDialogue()
     {

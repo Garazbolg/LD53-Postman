@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3594424839243377000}
   - component: {fileID: 4058259177359526572}
+  - component: {fileID: 5015280663679840828}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -52,6 +53,22 @@ MonoBehaviour:
   DialogueHasStarted: 0
   mailUI: {fileID: 7115678898291784095}
   speakUI: {fileID: 6875134215187064897}
+  r: {fileID: 0}
+--- !u!114 &5015280663679840828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3147517598294428276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ef7b6541204689923492e0f80cde9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: f5047b87c4bd80c45ab7a5057832c954, type: 2}
+  r: {fileID: 6559439868923386816}
+  mailRenderer: {fileID: 4001985707776484866}
 --- !u!1 &3952526562547133865
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +539,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2326247118644689542}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &4001985707776484866 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: df3c7dcda54aaf74580861b3a70f02e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2326247118644689542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4213953742223559573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -613,6 +636,12 @@ BoxCollider:
 --- !u!4 &5425961318004383919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8157738046989577018, guid: 57aae1570961c264f81e057ca45f4a04,
+    type: 3}
+  m_PrefabInstance: {fileID: 4213953742223559573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6559439868923386816 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7024831830127759445, guid: 57aae1570961c264f81e057ca45f4a04,
     type: 3}
   m_PrefabInstance: {fileID: 4213953742223559573}
   m_PrefabAsset: {fileID: 0}

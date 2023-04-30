@@ -31,11 +31,14 @@ public class HouseController : MonoBehaviour
     
     public GameObject mailUI;
     public GameObject speakUI;
+    public Renderer r;
 
     private void Start()
     {
         wasSpokenTo = houseData.GetDialogue() == null;
         wasDelivered = houseData.GetMail() == null;
+        
+        
     }
 
     public void StartDelivering()

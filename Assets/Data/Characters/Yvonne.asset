@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10457e2fc9349958425dceaa5674c43, type: 3}
   m_Name: Yvonne
   m_EditorClassIdentifier: 
+  skinColor: {r: 1, g: 0.69948626, b: 0.33999997, a: 1}
+  hairColor: {r: 0.7264151, g: 0.31694326, b: 0.058250275, a: 1}
+  pantsColor: {r: 0.25406396, g: 1, b: 0, a: 1}
+  shirtColor: {r: 1, g: 0, b: 0.7684326, a: 1}
