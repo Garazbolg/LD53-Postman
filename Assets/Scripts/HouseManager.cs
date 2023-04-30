@@ -65,10 +65,7 @@ public class HouseManager : MonoBehaviour
     {
         DialogueController.StopDialogue();
         if(_currentHouse == null) return;
-
-        if (!instance._currentHouse.wasDelivered || !instance._currentHouse.wasSpokenTo)
-        {
-            InteractWithHouse(_currentHouse);
-        }        
+        
+        InteractWithHouse(_currentHouse);
     }
 }
