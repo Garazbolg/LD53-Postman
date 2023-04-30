@@ -113,6 +113,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carController: {fileID: 3214291781043248842}
+  throttleAction: {fileID: -8243028225789567976, guid: 14e5a73942ca3294398d8091e7972528,
+    type: 3}
+  BreakAction: {fileID: -3366045647907745067, guid: 14e5a73942ca3294398d8091e7972528,
+    type: 3}
+  WheelAction: {fileID: 1746066101894931335, guid: 14e5a73942ca3294398d8091e7972528,
+    type: 3}
 --- !u!54 &3214291781043248845
 Rigidbody:
   m_ObjectHideFlags: 0
