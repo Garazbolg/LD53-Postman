@@ -10,6 +10,8 @@ public class HouseController : MonoBehaviour
     public Transform[] characterSpawnPoints;
     public bool CanDeliver => (!wasDelivered || !wasSpokenTo) && !DialogueHasStarted;
     public bool DialogueHasStarted = false;
+
+    public DialogueData dialogue;
     
     private bool _wasDelivered = false;
     private List<GameObject> characterVisuals = new List<GameObject>();
@@ -40,11 +42,13 @@ public class HouseController : MonoBehaviour
 
     private void Start()
     {
-        wasSpokenTo = houseData.GetDialogue() == null;
+        dialogue = houseData.GetDialogue();
+        
+        wasSpokenTo = dialogue == null;
         wasDelivered = houseData.GetMail() == null;
         
         if(wasSpokenTo) return;
-        var datas = houseData.GetDialogue().Characters;
+        var datas = dialogue.Characters;
         for (var index = 0; index < datas.Length; index++)
         {
             var character = datas[index];

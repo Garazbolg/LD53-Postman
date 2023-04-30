@@ -27,7 +27,7 @@ public class HouseManager : MonoBehaviour
 
         if (!instance._currentHouse.wasSpokenTo)
         {
-            var dialogue = house.houseData.GetDialogue();
+            var dialogue = house.dialogue;
             DialogueController.SetStringVariable("$characterName", dialogue.Characters[0].name);
             DialogueController.SetStringVariable("$dialogueToTrigger", dialogue.DialogueID);
         }
