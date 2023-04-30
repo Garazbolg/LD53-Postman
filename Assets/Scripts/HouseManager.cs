@@ -46,7 +46,9 @@ public class HouseManager : MonoBehaviour
     public static void Deliver()
     {
         instance._currentHouse.wasDelivered = true;
-        foreach (var mail in instance._currentHouse.houseData.GetMail())
+        var mails = instance._currentHouse.houseData.GetMail();
+        if(mails == null) return;
+        foreach (var mail in mails)
         {
             DialogueController.SetDelivered(mail,true);
         }

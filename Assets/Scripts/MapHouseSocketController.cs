@@ -14,17 +14,21 @@ public class MapHouseSocketController : MonoBehaviour, IPointerEnterHandler,IPoi
     public TMPro.TextMeshProUGUI AdressText;
     public GameObject mailIndicator;
     public VerticalLayoutGroup container;
-    private void Start()
+    private IEnumerator Start()
     {
+        while (DialogueController.instance == null)
+        {
+            yield return null;
+        }
         if (houseData == null)
         {
             gameObject.SetActive(false);
-            return;
+            yield break;
         }
 
         AdressText.text = houseData.address;
         var mails = houseData.GetMail();
-        if(mails == null) return;
+        if(mails == null) yield break;
         foreach (var mailData in mails)
         {
             var letter = Instantiate(LetterPrefab, container.transform);

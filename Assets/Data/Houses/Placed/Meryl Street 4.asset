@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74f115394aa9403a8b2bbaf4b8774cba, type: 3}
-  m_Name: Meryl Street 5
+  m_Name: Meryl Street 4
   m_EditorClassIdentifier: 
-  address: '5
+  address: '4
 
     Meryl street'
   dialogues: []
-  mailData: []
+  mailData:
+  - {fileID: 11400000, guid: d35612869aea8bf4b97c8d45c8c8fc8d, type: 2}
   roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   wallColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   mailBoxColor: {r: 0, g: 0.745283, b: 0.2613968, a: 1}

@@ -1,19 +1,28 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 public class PosteActivationTrigger : MonoBehaviour
 {
+    public static PosteActivationTrigger instance;
     public YarnProject project;
     public MeshRenderer activatorRenderer;
     private bool wasActivated = false;
     private bool wasActivated2 = false;
     [YarnNode(nameof(project))] public string dialogueEndRun;
     public string sceneToLoad;
+    
 
     [ContextMenu("Activate")]
     public void Activate()
     {
         activatorRenderer.material.SetFloat("_CurrentTime",Time.time);
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     private void OnTriggerStay(Collider other)
@@ -37,5 +46,11 @@ public class PosteActivationTrigger : MonoBehaviour
             wasActivated = true;
             wasActivated2 = false;
         }
+    }
+
+    [YarnCommand("load")]
+    public static void Load()
+    {
+        SceneManager.LoadScene(instance.sceneToLoad);
     }
 }
