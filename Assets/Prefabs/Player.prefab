@@ -113,6 +113,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carController: {fileID: 3214291781043248842}
+  inputActionAsset: {fileID: -944628639613478452, guid: 14e5a73942ca3294398d8091e7972528,
+    type: 3}
+  mapToEnable: Player
   throttleAction: {fileID: -8243028225789567976, guid: 14e5a73942ca3294398d8091e7972528,
     type: 3}
   BreakAction: {fileID: -3366045647907745067, guid: 14e5a73942ca3294398d8091e7972528,
@@ -148,10 +151,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2000
-  breakSpeed: 1000
+  breakSpeed: 500
   turnSpeed: 30
   adherence: 0.5
-  stopThreshold: 0.1
+  stopThreshold: 0.3
+  wheelThreshold: 0.1
 --- !u!65 &988657991
 BoxCollider:
   m_ObjectHideFlags: 0

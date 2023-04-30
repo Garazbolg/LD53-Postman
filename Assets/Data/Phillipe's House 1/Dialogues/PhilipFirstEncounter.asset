@@ -30,7 +30,30 @@ MonoBehaviour:
     targetAge: 0
     minDay: 0
     maxDay: 7
-    conditions: []
+    conditions:
+    - rid: 8214557621943533568
+    - rid: 8214557621943533569
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8214557621943533568
+      type: {class: BoolVariableCondition, ns: , asm: Assembly-CSharp}
+      data:
+        variableName: 
+        value: 0
+    - rid: 8214557621943533569
+      type: {class: IntVariableCondition, ns: , asm: Assembly-CSharp}
+      data:
+        left:
+          rid: 8214557621943533570
+        right:
+          rid: 8214557621943533571
+        comparison: 0
+    - rid: 8214557621943533570
+      type: {class: IntValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 8214557621943533571
+      type: {class: IntVariable, ns: , asm: Assembly-CSharp}
+      data:
+        variableName: 

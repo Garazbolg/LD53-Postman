@@ -12,6 +12,8 @@ public class HouseController : MonoBehaviour
     public bool DialogueHasStarted = false;
 
     public DialogueData dialogue;
+
+    public GameObject[] ToDeleteIfEmpty;
     
     private bool _wasDelivered = false;
     private List<GameObject> characterVisuals = new List<GameObject>();
@@ -38,10 +40,18 @@ public class HouseController : MonoBehaviour
     
     public GameObject mailUI;
     public GameObject speakUI;
-    public Renderer r;
 
     private void Start()
     {
+        if (houseData == null)
+        {
+            foreach (var go in ToDeleteIfEmpty)
+            {
+                Destroy(go);
+            }
+            return;
+        }
+        
         dialogue = houseData.GetDialogue();
         
         wasSpokenTo = dialogue == null;

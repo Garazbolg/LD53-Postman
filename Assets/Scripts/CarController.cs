@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     public float turnSpeed = 10;
     public float adherence = 0.1f;
     public float stopThreshold = 0.1f;
+    public float wheelThreshold = 0.1f;
     
     [Serializable]
     public struct CarInput
@@ -45,27 +46,34 @@ public class CarController : MonoBehaviour
         {
             _rigidbody.AddForce(transform.forward * speed);
         }
-        
+
         // Break
         if (_currentInput.Break)
         {
-            _rigidbody.AddForce(transform.forward * -breakSpeed * Mathf.Clamp01(Vector3.Dot(_rigidbody.velocity.normalized,transform.forward)));
+            _rigidbody.AddForce(transform.forward * -breakSpeed);
         }
+
+
+        if(!_currentInput.Throttle && !_currentInput.Break && _rigidbody.velocity.magnitude < stopThreshold)
+            _rigidbody.velocity = Vector3.zero;
+        
         
         // Turn
-        if (_currentInput.wheel != 0)
+        if (Mathf.Abs(_currentInput.wheel) > wheelThreshold)
         {
-            var rotationScaling = Mathf.Clamp01(Vector3.Dot(_rigidbody.velocity.normalized,transform.forward));
-            _rigidbody.rotation *= Quaternion.Euler(0, _currentInput.wheel * turnSpeed * Time.fixedDeltaTime * rotationScaling, 0);
+            var rotationScaling = Vector3.Dot(_rigidbody.velocity.normalized, transform.forward);
+            _rigidbody.rotation *= Quaternion.Euler(0,
+                _currentInput.wheel * turnSpeed * Time.fixedDeltaTime * rotationScaling, 0);
         }
-        
-        // Rotate velocity to match the car's forward direction
-        var velocity = _rigidbody.velocity;
-        var rotation = Quaternion.FromToRotation(velocity.normalized,transform.forward);
-        var finalRotation = Quaternion.Slerp(Quaternion.identity, rotation, Time.fixedDeltaTime * _rigidbody.velocity.magnitude * adherence);
-        _rigidbody.velocity = finalRotation * velocity;
-        
-        if(!_currentInput.Throttle && _rigidbody.velocity.magnitude < stopThreshold)
-            _rigidbody.velocity = Vector3.zero;
+
+        if (_currentInput.Throttle)
+        {
+            // Rotate velocity to match the car's forward direction
+            var velocity = _rigidbody.velocity;
+            var rotation = Quaternion.FromToRotation(velocity.normalized, transform.forward);
+            var finalRotation = Quaternion.Slerp(Quaternion.identity, rotation,
+                Time.fixedDeltaTime * _rigidbody.velocity.magnitude * adherence);
+            _rigidbody.velocity = finalRotation * velocity;
+        }
     }
 }
