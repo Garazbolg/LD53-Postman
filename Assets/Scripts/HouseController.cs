@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class HouseController : MonoBehaviour
@@ -11,6 +12,7 @@ public class HouseController : MonoBehaviour
     public bool DialogueHasStarted = false;
     
     private bool _wasDelivered = false;
+    private List<GameObject> characterVisuals = new List<GameObject>();
     public bool wasDelivered
     {
         get => _wasDelivered;
@@ -49,6 +51,7 @@ public class HouseController : MonoBehaviour
             var t = characterSpawnPoints[index];
             var characterVisuals = Instantiate(characterPrefab,t.position,t.rotation);
             characterVisuals.data = character;
+            this.characterVisuals.Add(characterVisuals.gameObject);
         }
     }
 
@@ -61,5 +64,12 @@ public class HouseController : MonoBehaviour
     public void Leave()
     {
         DialogueHasStarted = false;
+        if (wasSpokenTo)
+        {
+            foreach (var characterVisual in characterVisuals)
+            {
+                Destroy(characterVisual);
+            }
+        }
     }
 }
