@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f115394aa9403a8b2bbaf4b8774cba, type: 3}
+  m_Name: Church street
+  m_EditorClassIdentifier: 
+  address: '1
+
+    Church street'
+  dialogues: []
+  mailData: []
+  roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
+  wallColor: {r: 1, g: 1, b: 1, a: 1}
+  mailBoxColor: {r: 0.52078146, g: 0.7830189, b: 0.56854445, a: 1}

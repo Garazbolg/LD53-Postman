@@ -14,8 +14,10 @@ public class HouseVisuals : MonoBehaviour
 
     private void Apply()
     {
+        if(r == null || data == null) return;
         r.materials[0].SetColor("_BaseColor", data.roofColor);
         r.materials[1].SetColor("_BaseColor", data.wallColor);
+        if(mailRenderer == null || data == null) return;
         mailRenderer.materials[0].SetColor("_BaseColor", data.mailBoxColor);
     }
 

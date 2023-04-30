@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -41,15 +42,19 @@ public class HouseController : MonoBehaviour
     public GameObject mailUI;
     public GameObject speakUI;
 
-    private void Start()
+    private IEnumerator Start()
     {
+        while (DialogueController.instance == null)
+        {
+            yield return null;
+        }
         if (houseData == null)
         {
             foreach (var go in ToDeleteIfEmpty)
             {
                 Destroy(go);
             }
-            return;
+            yield break;
         }
         
         dialogue = houseData.GetDialogue();
@@ -57,7 +62,8 @@ public class HouseController : MonoBehaviour
         wasSpokenTo = dialogue == null;
         wasDelivered = houseData.GetMail() == null;
         
-        if(wasSpokenTo) return;
+        if(wasSpokenTo) 
+            yield break;
         var datas = dialogue.Characters;
         for (var index = 0; index < datas.Length; index++)
         {

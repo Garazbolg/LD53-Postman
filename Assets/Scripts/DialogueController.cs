@@ -6,7 +6,7 @@ using Yarn.Unity;
 
 public class DialogueController : MonoBehaviour
 {
-    private static DialogueController instance;
+    public static DialogueController instance;
 
     public YarnProject project;
     public DialogueRunner runner;

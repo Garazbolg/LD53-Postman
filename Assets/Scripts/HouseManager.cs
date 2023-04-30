@@ -46,7 +46,10 @@ public class HouseManager : MonoBehaviour
     public static void Deliver()
     {
         instance._currentHouse.wasDelivered = true;
-        DialogueController.SetDelivered(instance._currentHouse.houseData.GetMail(),true);
+        foreach (var mail in instance._currentHouse.houseData.GetMail())
+        {
+            DialogueController.SetDelivered(mail,true);
+        }
     }
 
     [YarnCommand("spoken")]

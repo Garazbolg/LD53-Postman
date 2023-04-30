@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "HouseData", menuName = "Data/HouseData", order = 0)]
 public class HouseData : ScriptableObject
 {
+    [TextArea] public string address; 
+    
     public DialogueData[] dialogues;
     
     public MailData[] mailData;
@@ -28,19 +31,9 @@ public class HouseData : ScriptableObject
         return selectedDialogue;
     }
     
-    public MailData GetMail()
+    public MailData[] GetMail()
     {
-        MailData selectedMail = null;
-        var highestPriority = float.MinValue;
-        foreach (var mail in mailData)
-        {
-            if(mail.priority < highestPriority) continue;
-            if (!mail.CheckCondition()) continue;
-            
-            selectedMail = mail;
-            highestPriority = Mathf.Max(highestPriority, mail.priority);
-        }
-
-        return selectedMail;
+        var list = mailData.Where(m => m.CheckCondition()).ToList();
+        return list?.Count > 0 ? list.ToArray() : null;
     }
 }
