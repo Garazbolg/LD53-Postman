@@ -1,6 +1,6 @@
 ﻿public enum AgeEnum
 {
-    Child,
+    Young,
     Adult,
-    Elder
+    Elder,
 }

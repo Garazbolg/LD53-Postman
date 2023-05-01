@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3244177418099390381}
   - component: {fileID: 3244177418099390380}
-  - component: {fileID: 3244177418099390383}
   m_Layer: 0
   m_Name: GameManger
   m_TagString: Untagged
@@ -47,20 +46,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentAge: 0
   currentDay: 0
---- !u!114 &3244177418099390383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3244177418099390382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6976f53f223046c38b9ee1f87ee47ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  project: {fileID: 7545569452688597077, guid: f0d87f1ff09a31641a6a0f93a9189728, type: 3}
-  bothDialogueID: BothDialogue
-  deliverDialogueID: DeliverDialogue
-  speakDialogueID: SpeakDialogue
-  noneDialogueID: NoneDialogue

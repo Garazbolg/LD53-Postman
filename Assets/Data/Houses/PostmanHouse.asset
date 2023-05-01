@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f115394aa9403a8b2bbaf4b8774cba, type: 3}
+  m_Name: PostmanHouse
+  m_EditorClassIdentifier: 
+  address: Home
+  dialogues:
+  - {fileID: 11400000, guid: f251c48052e5cff4b90990c4240f554c, type: 2}
+  - {fileID: 11400000, guid: 003feb2de07ef634c809fd21a3b43d9d, type: 2}
+  - {fileID: 11400000, guid: d07a33ee590eaab46844c38cae6ab499, type: 2}
+  - {fileID: 11400000, guid: 8ad674945476b5b4fb4a0655b68618b1, type: 2}
+  - {fileID: 11400000, guid: 4fab0a5a0ffe73d49b618a6d5e5be735, type: 2}
+  - {fileID: 11400000, guid: f2bfba48f77ec39448ddac82d574d0c1, type: 2}
+  - {fileID: 11400000, guid: c0f2633b91eca2c49b85d47e857cc675, type: 2}
+  - {fileID: 11400000, guid: d1a7a8229becf054888d88472d73f0ee, type: 2}
+  - {fileID: 11400000, guid: 7dd32eee27d0c46478ed29e10a61148f, type: 2}
+  mailData: []
+  roofColor: {r: 0, g: 0, b: 0, a: 0}
+  wallColor: {r: 0, g: 0, b: 0, a: 0}
+  mailBoxColor: {r: 0, g: 0, b: 0, a: 0}

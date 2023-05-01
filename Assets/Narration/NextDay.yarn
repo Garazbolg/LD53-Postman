@@ -1,0 +1,80 @@
+title: NextDayDialogueAge0Day0
+tags:
+---
+    <<fadein>>
+    <<wait 1>>
+    <<show_text "-That wasn't too bad for a first day.">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 1>>
+    <<show_text "[i]NEXT DAY[/i]">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 1>>
+    <<load>>
+===
+
+title: NextDayDialogueAge0Day1
+tags:
+---
+    <<fadein>>
+    <<wait 1>>
+    <<show_text "-I'm starting to get the hang of it">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 1>>
+    <<show_text "[i]NEXT DAY[/i]">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 1>>
+    <<load>>
+===
+
+title: NextDayDialogueAge0Day2
+tags:
+---
+    <<fadein>>
+    <<wait 2>>
+<<if $hasMetLaetitia>>
+???: Knock knock knock
+Postman: Who is it ?
+Laetitia: It's Laetitia, Morgana's daughter.
+<<wait 2>>
+Laetitia: She told me to bring you this pie.
+Postman: Oh thank you, but what for ?
+Laetitia: Doing your job, I guess. You know how people are around here.
+Postman: Yes, they've been very welcoming. I love hearing their stories.
+Laetitia: And you don't know half of it yet. I could tell you sometime.
+Postman: Why not now, I've got some time and a bottle of whisky.
+Laetitia: Alright, but neat, no ice.
+Postman: Wouldn't have it any other way. Come on in.
+<<endif>>
+    <<wait 4>>
+    <<show_text "[i]20 YEARS LATER[/i]">>
+    <<wait 2>>
+    <<wait 6>>
+    <<hide_text>>
+    <<wait 2>>
+    <<load>>
+===
+
+title: NextDayDialogueAge2Day2
+tags:
+---
+    <<fadein>>
+    <<wait 2>>
+    <<show_text "">>
+    <<wait 2>>
+    <<wait 4>>
+    <<hide_text>>
+    <<wait 2>>
+    <<show_text "[i][b]The End[/b][/i]">>
+    <<wait 4>>
+    <<hide_text>>
+    <<wait 2>>
+    <<show_text "A game made by Garazbolg for the Ludum Dare 53">>
+    <<wait 4>>
+    <<hide_text>>
+    <<wait 2>>
+    <<show_text "This game is dedicated to my grandmother.\n Who told me a lot of stories about the people in the neighborhood while growing up">>
+===

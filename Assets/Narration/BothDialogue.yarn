@@ -45,9 +45,8 @@ tags:
 ---
 End your shift ?
 -> Yes
-    <<fadein>>
-    <<wait 2>>
-    <<load>>
+    <<next_day>>
+    <<jump {$dialogueToTrigger}>>
 -> Keep going
     <<stop>>
 ===

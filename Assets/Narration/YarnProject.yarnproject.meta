@@ -12,14 +12,46 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: 2dd7950fc9562e04ca53f3615fa45c97, type: 3}
   - {fileID: 6391573757903218779, guid: e49c97bcf032cc240965c1ff35fc5cc5, type: 3}
   - {fileID: 6391573757903218779, guid: d219a1b3e6c7bfa46a2ff43f0c172eff, type: 3}
-  compileErrors:
-  - '5:13: Error: Can''t figure out the type of variable $characterName given its
-    context. Specify its type with a <<declare>> statement.
-
-    $characterName
-
-'
-  serializedDeclarations: []
+  - {fileID: 6391573757903218779, guid: e980b4772cebff24bb3d52648ca79a7d, type: 3}
+  - {fileID: 6391573757903218779, guid: cddfa89f8e4a2be478e17076ee4a916b, type: 3}
+  compileErrors: []
+  serializedDeclarations:
+  - name: $VariableInit
+    typeName: Bool
+    defaultValueBool: 1
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: d219a1b3e6c7bfa46a2ff43f0c172eff,
+      type: 3}
+  - name: $characterName
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: Seth
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: d219a1b3e6c7bfa46a2ff43f0c172eff,
+      type: 3}
+  - name: $dialogueToTrigger
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: Dialog
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: d219a1b3e6c7bfa46a2ff43f0c172eff,
+      type: 3}
+  - name: $hasMetLaetitia
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: d219a1b3e6c7bfa46a2ff43f0c172eff,
+      type: 3}
   defaultLanguage: fr-FR
   languagesToSourceAssets: []
   useAddressableAssets: 0

@@ -15,7 +15,9 @@ MonoBehaviour:
   address: '1
 
     Meryl street'
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 8ce5bfeb2efadc0418ebfe7819575809, type: 2}
+  - {fileID: 11400000, guid: 975c49e33e1b0b4478ea9af52025bad7, type: 2}
   mailData: []
   roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   wallColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}

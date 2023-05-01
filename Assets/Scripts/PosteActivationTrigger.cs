@@ -11,6 +11,7 @@ public class PosteActivationTrigger : MonoBehaviour
     private bool wasActivated = false;
     private bool wasActivated2 = false;
     [YarnNode(nameof(project))] public string dialogueEndRun;
+    public HouseData homeHouse;
     public string sceneToLoad;
     
 
@@ -33,6 +34,7 @@ public class PosteActivationTrigger : MonoBehaviour
         {
             Activate();
             wasActivated2 = true;
+            DialogueController.SetStringVariable("$dialogueToTrigger", homeHouse.GetDialogue().DialogueID);
             DialogueController.StartDialogue(dialogueEndRun);
         }
     }

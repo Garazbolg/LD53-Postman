@@ -1,0 +1,43 @@
+title: MorganaFirstEncounter
+tags:
+---
+Morgana: Oh you're the new guy.
+Morgana: What a charming young lad ! How old are you ?
+Postman: I'm 22 year old mam'
+Morgana: Ohhhh .... hmmm
+Postman: What is it mam' ?
+Morgana: I wonder...
+Morgana: Where are you from again ?
+Postman: You never asked, I'm from the next town over. I'm the son the charpenter there.
+Morgana: Oh yes, I know of him. Perfect.
+Postman: What is ?
+Morgana: Nothing. Well goodbye for now.
+Postman: ...
+===
+
+title: MorganaSecondEncounter
+tags:
+---
+Morgana: Here you are. How was your first day ?
+Postman: People have been welcoming, but I'm still trying to figure my way around the neighborhood.
+Morgana: You'll find your way soon enough, don't worry.
+Postman: Is there anything I can help you with, mam' ?
+Morgana: What a generous offer ! I knew you were a good lad.
+Morgana: I wanted you to meet my daughter Laetitia, but she's off with some friends.
+<<set $hasMetLaetitia to true>>
+Morgana: She's about your age, but spends all her time at the beach.
+Postman: I would do the same if I had more free time.
+Morgana: Seams she has too much of it.
+Morgana: Would you like to come in, for a snack ?
+-> Yes
+    Postman: Sure, but a quick one I'm on the job.
+    <<fadein>>
+    <<wait 2>>
+    <<fadeout>>
+    Postman: Thank you for the snack and the chat. I might come more often.
+-> No
+    Postman: Sorry mam', I'm on the job and It's still my second day.
+    Morgana: No worries.
+Morgana: I'll see you tomorrow then.
+Postman: Tomorrow it is.
+===

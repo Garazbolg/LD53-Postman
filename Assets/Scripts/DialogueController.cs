@@ -16,7 +16,12 @@ public class DialogueController : MonoBehaviour
     {
         instance = this;
     }
-    
+
+    private void Start()
+    {
+        runner.onNodeStart.AddListener(SetVisited);
+    }
+
     public static void StartDialogue(string dialogueID)
     {
         instance.runner.StartDialogue(dialogueID);
@@ -56,11 +61,16 @@ public class DialogueController : MonoBehaviour
         instance.variableStorage.SetValue(variableName, value);
     }
     
-    public static bool GetVisited(string dialogueID)
+    public static bool GetVisited(String dialogueID)
     {
-        var formattedString = $"$Yarn.Internal.FakeVisiting.{dialogueID}";
-        instance.variableStorage.TryGetValue(formattedString,out float value);
-        return value > 0;
+        var formattedString = $"$Yarn.Internal.FakeVisit.{dialogueID}";
+        return instance.variableStorage.TryGetValue(formattedString,out bool value) && value;
+    }
+    
+    public void SetVisited(string dialogueID)
+    {
+        var formattedString = $"$Yarn.Internal.FakeVisit.{dialogueID}";
+        instance.variableStorage.SetValue(formattedString,true);
     }
 
     public static bool GetDelivered(MailData mail)

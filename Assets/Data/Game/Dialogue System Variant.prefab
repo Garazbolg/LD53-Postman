@@ -354,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110833399443695422}
   - component: {fileID: 2020263879666064701}
-  - component: {fileID: 1769395286817168682}
+  - component: {fileID: 1562382495411942338}
   - component: {fileID: 1556466560}
   - component: {fileID: 7575327174024797116}
   - component: {fileID: 8112394079188225609}
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yarnProject: {fileID: 7545569452688597077, guid: f0d87f1ff09a31641a6a0f93a9189728,
     type: 3}
-  _variableStorage: {fileID: 1769395286817168682}
+  _variableStorage: {fileID: 1562382495411942338}
   dialogueViews:
   - {fileID: 4969019281187465396}
   - {fileID: 5946854343285917}
@@ -477,7 +477,7 @@ MonoBehaviour:
   onCommand:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1769395286817168682
+--- !u!114 &1562382495411942338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 834245635010073920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
+  m_Script: {fileID: 11500000, guid: cabb424da6034a240b9e436304d3c3fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   showDebug: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   project: {fileID: 7545569452688597077, guid: f0d87f1ff09a31641a6a0f93a9189728, type: 3}
   runner: {fileID: 2020263879666064701}
-  variableStorage: {fileID: 1769395286817168682}
+  variableStorage: {fileID: 1562382495411942338}
 --- !u!114 &7575327174024797116
 MonoBehaviour:
   m_ObjectHideFlags: 0

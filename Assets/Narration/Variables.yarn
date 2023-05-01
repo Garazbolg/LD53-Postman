@@ -1,5 +1,11 @@
 title: Variables
 ---
+<<if $VariableInit is true>>
+<<declare $VariableInit to true>>
 <<declare $characterName to "Seth">>
 <<declare $dialogueToTrigger to "Dialog">>
+<<declare $hasMetLaetitia to false>>
+<<else>>
+<<set $VariableInit to true>>
+<<endif>>
 ===
