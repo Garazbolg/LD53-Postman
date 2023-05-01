@@ -33,6 +33,7 @@ public class HouseData : ScriptableObject
     
     public MailData[] GetMail()
     {
+        if(mailData == null) return null;
         var list = mailData.Where(m => m.CheckCondition()).ToList();
         return list?.Count > 0 ? list.ToArray() : null;
     }

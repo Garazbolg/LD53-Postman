@@ -16,8 +16,7 @@ MonoBehaviour:
 
     Church street'
   dialogues: []
-  mailData:
-  - {fileID: 11400000, guid: d35612869aea8bf4b97c8d45c8c8fc8d, type: 2}
+  mailData: []
   roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   wallColor: {r: 1, g: 0.93785244, b: 0.4481132, a: 1}
   mailBoxColor: {r: 0.68824875, g: 0, b: 0.74509805, a: 1}

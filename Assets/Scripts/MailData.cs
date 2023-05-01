@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "MailData", menuName = "Data/MailData", order = 0)]
 public class MailData : ScriptableObject
@@ -24,5 +25,10 @@ public class MailData : ScriptableObject
         }
 
         return condition.CheckConditions();
+    }
+
+    private void OnValidate()
+    {
+        subject = name;
     }
 }

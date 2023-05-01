@@ -45,6 +45,8 @@ tags:
 ---
 End your shift ?
 -> Yes
+    <<fadein>>
+    <<wait 2>>
     <<load>>
 -> Keep going
     <<stop>>

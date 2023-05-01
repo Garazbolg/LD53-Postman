@@ -1,8 +1,11 @@
 ﻿title: YvonneFirstEncounter
 tags:
 ---
-Yvonne: Hello there! I'm Yvonne, a chatbot. What's your name?
-PostMan: I'm PostMan.
+Yvonne: Hello there!
+Yvonne: So, you're the new postman.
+Postman: I sure am !
+Yvonne: Welcome to the neighborhood, I hope you will feel right at home.
+Postman: I hope so too.
 ===
 
 title: YvonneGoodbye
@@ -10,4 +13,24 @@ tags:
 ---
 Yvonne: Goodbye, PostMan!
 PostMan: Goodbye, Yvonne!
+===
+
+title: JeanFirstEncounter
+tags:
+---
+Jean: Congratulation !
+Postman: Thank you, but ... what for ?
+Jean: You're the new postman, aren't you ?
+Postman: Yes, I am.
+Jean: Then congratulation on the new gig !
+Postman: Oh Yes, thank you then.
+Jean: This here is my son Joseph.
+Joseph: Hello mister !
+Postman: Hello little guy.
+<<if visited("YvonneFirstEncounter")>>
+    Jean: I heard you've also met my mother, Yvonne.
+    Jean: She seamed to like you.
+<<endif>>
+Jean: We wont keep you too long, see you another time.
+Joseph: Goodbye mister !
 ===

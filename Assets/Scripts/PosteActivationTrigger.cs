@@ -33,7 +33,6 @@ public class PosteActivationTrigger : MonoBehaviour
         {
             Activate();
             wasActivated2 = true;
-            DialogueController.SetStringVariable("$sceneToLoad", sceneToLoad);
             DialogueController.StartDialogue(dialogueEndRun);
         }
     }
