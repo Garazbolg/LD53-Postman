@@ -8,6 +8,7 @@ public class LetterController : MonoBehaviour
 
     private void OnEnable()
     {
+        if(mailData == null) Destroy(gameObject);
         subjectText.text = mailData.subject;
         crossImage.SetActive(DialogueController.GetDelivered(mailData));
     }

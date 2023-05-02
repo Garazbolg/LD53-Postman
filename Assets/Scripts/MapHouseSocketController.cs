@@ -13,7 +13,10 @@ public class MapHouseSocketController : MonoBehaviour, IPointerEnterHandler,IPoi
     public GameObject LetterPrefab;
     public TMPro.TextMeshProUGUI AdressText;
     public GameObject mailIndicator;
+    public GameObject DialogueIndicator;
     public VerticalLayoutGroup container;
+
+    private DialogueData dialogue;
     private IEnumerator Start()
     {
         while (DialogueController.instance == null)
@@ -27,6 +30,7 @@ public class MapHouseSocketController : MonoBehaviour, IPointerEnterHandler,IPoi
         }
 
         AdressText.text = houseData.address;
+        dialogue = houseData.GetDialogue();
         var mails = houseData.GetMail();
         if(mails == null) yield break;
         foreach (var mailData in mails)
@@ -39,6 +43,7 @@ public class MapHouseSocketController : MonoBehaviour, IPointerEnterHandler,IPoi
     private void OnEnable()
     {
         mailIndicator.SetActive(houseData.GetMail() != null);
+        DialogueIndicator.SetActive(dialogue != null && !DialogueController.GetVisited(dialogue.DialogueID));
         houseUI.SetActive(false);
     }
 
