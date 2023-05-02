@@ -17,7 +17,9 @@ MonoBehaviour:
     Meryl street'
   dialogues:
   - {fileID: 11400000, guid: 0e494b57a1bf65d48976cb13bada28c2, type: 2}
-  mailData: []
+  mailData:
+  - {fileID: 11400000, guid: dbdc31ec991bcbb4c988c56f84fa002d, type: 2}
+  - {fileID: 11400000, guid: fda474ebf8e0f0e41bd465b7229beba1, type: 2}
   roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   wallColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   mailBoxColor: {r: 0, g: 0.745283, b: 0.2613968, a: 1}

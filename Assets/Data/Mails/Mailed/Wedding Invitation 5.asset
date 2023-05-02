@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3ff0b6cdea34523a4c2cc6d0054c040, type: 3}
-  m_Name: Electricity Bill
+  m_Name: Wedding Invitation 5
   m_EditorClassIdentifier: 
   from: 
   to: 
   signature: 
   body: 
-  subject: 
+  subject: Wedding Invitation
   attachments: []
   canRepeat: 0
   priority: 0
@@ -24,9 +24,9 @@ MonoBehaviour:
     project: {fileID: 0}
     RequiredDialogues: []
     ExclusiveDialogues: []
-    targetAge: 0
-    minDay: 0
-    maxDay: 0
+    targetAge: 2
+    minDay: 2
+    maxDay: 2
     conditions: []
   references:
     version: 2

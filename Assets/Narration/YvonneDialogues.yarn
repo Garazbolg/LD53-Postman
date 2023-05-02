@@ -8,29 +8,31 @@ Yvonne: Welcome to the neighborhood, I hope you will feel right at home.
 Postman: I hope so too.
 ===
 
-title: YvonneGoodbye
+title: YvonneSecond
 tags:
 ---
-Yvonne: Goodbye, PostMan!
-PostMan: Goodbye, Yvonne!
+Yvonne: Hello !
+Yvonne: JEAN ! Stop annoying the dog, he's gonna bite you.
+Yvonne: Sorry, kids, right ?
+Postman: I wouldn't know, I don't have any of my own yet.
+Yvonne: Well someday...
+Yvonne: JEAN ! I TOLD YOU SO! Rohhh... Sorry got to go handle that.
 ===
 
-title: JeanFirstEncounter
+title: JeanFirst
 tags:
 ---
-Jean: Congratulation !
-Postman: Thank you, but ... what for ?
-Jean: You're the new postman, aren't you ?
-Postman: Yes, I am.
-Jean: Then congratulation on the new gig !
-Postman: Oh Yes, thank you then.
-Jean: This here is my son Joseph.
+Jean: Hello there, postman.
+Postman: Oh Jean, wait ... that's not your house.
+Jean: It is now, I just bought it for wife and kids.
+Postman: Kids ?
+Jean: Yes, there is Joseph, my eldest.
+Jean: Joseph say hi !
 Joseph: Hello mister !
 Postman: Hello little guy.
-<<if visited("YvonneFirstEncounter")>>
-    Jean: I heard you've also met my mother, Yvonne.
-    Jean: She seamed to like you.
-<<endif>>
-Jean: We wont keep you too long, see you another time.
-Joseph: Goodbye mister !
+Jean: We have another boy napping and a third on the way.
+Postman: I hope to meet them soon.
+Jean: Sure, you're welcome anytime.
+Postman: Thanks, don't get into trouble now kid !
+Joseph: No mister !
 ===

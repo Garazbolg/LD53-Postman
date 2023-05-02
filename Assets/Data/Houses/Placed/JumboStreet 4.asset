@@ -16,7 +16,8 @@ MonoBehaviour:
 
     Jumbo street'
   dialogues: []
-  mailData: []
+  mailData:
+  - {fileID: 11400000, guid: f3a8c18343ec7964583757e2e06df4dd, type: 2}
   roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   wallColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   mailBoxColor: {r: 0, g: 0.745283, b: 0.2613968, a: 1}

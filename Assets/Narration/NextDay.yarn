@@ -7,10 +7,10 @@ tags:
     <<wait 2>>
     <<hide_text>>
     <<wait 1>>
-    <<show_text "[i]NEXT DAY[/i]">>
+    <<show_text "NEXT DAY">>
     <<wait 2>>
     <<hide_text>>
-    <<wait 1>>
+    <<wait 2>>
     <<load>>
 ===
 
@@ -23,10 +23,10 @@ tags:
     <<wait 2>>
     <<hide_text>>
     <<wait 1>>
-    <<show_text "[i]NEXT DAY[/i]">>
+    <<show_text "NEXT DAY">>
     <<wait 2>>
     <<hide_text>>
-    <<wait 1>>
+    <<wait 2>>
     <<load>>
 ===
 
@@ -50,25 +50,113 @@ Laetitia: Alright, but neat, no ice.
 Postman: Wouldn't have it any other way. Come on in.
 <<endif>>
     <<wait 4>>
-    <<show_text "[i]20 YEARS LATER[/i]">>
-    <<wait 2>>
-    <<wait 6>>
+    <<show_text "20 YEARS LATER">>
+    <<wait 4>>
     <<hide_text>>
     <<wait 2>>
     <<load>>
 ===
+
+title: NextDayDialogueAge1Day0
+tags:
+---
+    <<fadein>>
+    <<wait 1>>
+    <<show_text "-Another day at work">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 1>>
+    <<show_text "NEXT DAY">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 2>>
+    <<load>>
+===
+
+title: NextDayDialogueAge1Day1
+tags:
+---
+    <<fadein>>
+    <<wait 1>>
+    <<show_text "-Another day ...">>
+    <<wait 2>>
+<<if $hasMetLaetitia>>
+Laetitia: Do you wanna watch a movie ? The kids are already asleep.
+Postman: Ahhh finally some time alone with you ! 
+<<endif>>
+    <<hide_text>>
+    <<wait 1>>
+    <<show_text "NEXT DAY">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 2>>
+    <<load>>
+===
+
+title: NextDayDialogueAge1Day2
+tags:
+---
+    <<fadein>>
+    <<wait 1>>
+    <<show_text "-What a day at work">>
+    <<wait 2>>
+    <<hide_text>>
+
+    <<wait 1>>
+    <<show_text "20 YEARS LATER">>
+    <<wait 4>>
+    <<hide_text>>
+    <<wait 2>>
+    <<load>>
+===
+
+title: NextDayDialogueAge2Day0
+tags:
+---
+    <<fadein>>
+    <<wait 1>>
+    <<show_text "-I'm gonna miss this">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 1>>
+    <<show_text "NEXT DAY">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 2>>
+    <<load>>
+===
+
+title: NextDayDialogueAge2Day1
+tags:
+---
+    <<fadein>>
+    <<wait 1>>
+    <<show_text "-One last day to go">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 1>>
+    <<show_text "NEXT DAY">>
+    <<wait 2>>
+    <<hide_text>>
+    <<wait 2>>
+    <<load>>
+===
+
 
 title: NextDayDialogueAge2Day2
 tags:
 ---
     <<fadein>>
     <<wait 2>>
-    <<show_text "">>
-    <<wait 2>>
+    <<show_text "After 40 years of service. The postman goes on retirement.">>
     <<wait 4>>
     <<hide_text>>
     <<wait 2>>
-    <<show_text "[i][b]The End[/b][/i]">>
+    <<show_text "The town will always remember him, as he will always remember them.">>
+    <<wait 4>>
+    <<hide_text>>
+    <<wait 2>>
+    <<show_text "THE END">>
     <<wait 4>>
     <<hide_text>>
     <<wait 2>>
@@ -76,5 +164,5 @@ tags:
     <<wait 4>>
     <<hide_text>>
     <<wait 2>>
-    <<show_text "This game is dedicated to my grandmother.\n Who told me a lot of stories about the people in the neighborhood while growing up">>
+    <<show_text "This game is dedicated to my grandmother.Who told me a lot of stories about the people in the neighborhood while growing up">>
 ===

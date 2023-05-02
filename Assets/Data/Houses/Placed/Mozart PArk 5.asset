@@ -16,7 +16,11 @@ MonoBehaviour:
 
     Mozart park'
   dialogues: []
-  mailData: []
+  mailData:
+  - {fileID: 11400000, guid: 652377f9eb81e6d448c5a70773b26ec9, type: 2}
+  - {fileID: 11400000, guid: a4ee8f60a675afb4a9f3f54bce6bf5ac, type: 2}
+  - {fileID: 11400000, guid: 30ed25a9118a7cc42ad1ef9e92329422, type: 2}
+  - {fileID: 11400000, guid: 56182b3bd311c0048ab7d439cdd421a9, type: 2}
   roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   wallColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   mailBoxColor: {r: 0, g: 0.745283, b: 0.2613968, a: 1}

@@ -14,6 +14,7 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: d219a1b3e6c7bfa46a2ff43f0c172eff, type: 3}
   - {fileID: 6391573757903218779, guid: e980b4772cebff24bb3d52648ca79a7d, type: 3}
   - {fileID: 6391573757903218779, guid: cddfa89f8e4a2be478e17076ee4a916b, type: 3}
+  - {fileID: 6391573757903218779, guid: 9047d665ea8634c40abe3eeb474ac04d, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $VariableInit

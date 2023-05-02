@@ -17,7 +17,10 @@ MonoBehaviour:
     Queen Elizabeth street'
   dialogues:
   - {fileID: 11400000, guid: d2eba2654d19a1448a66b8c8d5b1f0b1, type: 2}
-  mailData: []
+  - {fileID: 11400000, guid: 65c6449dd5bc720429e2dd8f68cbd12e, type: 2}
+  mailData:
+  - {fileID: 11400000, guid: 0f1fb175a4c80904f9818ecaa7c259b0, type: 2}
+  - {fileID: 11400000, guid: 83621fa3ce9c9674b81218655139bb3e, type: 2}
   roofColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   wallColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   mailBoxColor: {r: 0, g: 0.745283, b: 0.2613968, a: 1}

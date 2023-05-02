@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Age1Day1
   m_EditorClassIdentifier: 
   project: {fileID: 7545569452688597077, guid: f0d87f1ff09a31641a6a0f93a9189728, type: 3}
-  DialogueID: NextDayDialogueAge0Day0
+  DialogueID: NextDayDialogueAge1Day1
   Characters: []
   disableDialogueOnLeave: 0
   charactersLeaveAfterDialogue: 0

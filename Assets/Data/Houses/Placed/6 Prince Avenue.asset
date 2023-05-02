@@ -15,8 +15,14 @@ MonoBehaviour:
   address: '6
 
     Prince Avenue'
-  dialogues: []
-  mailData: []
-  roofColor: {r: 0.6226415, g: 0.36671743, b: 0.049928807, a: 1}
-  wallColor: {r: 0.31763974, g: 0.8113208, b: 0.7913782, a: 1}
-  mailBoxColor: {r: 0.9245283, g: 0.24107867, b: 0.100302614, a: 1}
+  dialogues:
+  - {fileID: 11400000, guid: 72319bdaa895f4744822e8d6514562e5, type: 2}
+  - {fileID: 11400000, guid: 4491aff661fde1a44ac193b34782b8a3, type: 2}
+  - {fileID: 11400000, guid: 464399965e620f2479d8f4f81323d57e, type: 2}
+  - {fileID: 11400000, guid: 2570c80cd61593c4991e8e01bd8a33dd, type: 2}
+  - {fileID: 11400000, guid: 51ab2ef3238697344aa43f409f7b5a4a, type: 2}
+  mailData:
+  - {fileID: 11400000, guid: eb10187b57eada4409813f1a3a83e881, type: 2}
+  roofColor: {r: 0, g: 0, b: 0, a: 1}
+  wallColor: {r: 1, g: 0.42769682, b: 0, a: 1}
+  mailBoxColor: {r: 0.9254902, g: 0.10196076, b: 0.67340165, a: 1}

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3ff0b6cdea34523a4c2cc6d0054c040, type: 3}
-  m_Name: We are expecting
+  m_Name: Electricity Bill 7
   m_EditorClassIdentifier: 
   from: 
   to: 
   signature: 
   body: 
-  subject: We are expecting
+  subject: Electricity Bill 7
   attachments: []
   canRepeat: 0
   priority: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
     project: {fileID: 0}
     RequiredDialogues: []
     ExclusiveDialogues: []
-    targetAge: 1
+    targetAge: 2
     minDay: 0
     maxDay: 0
     conditions: []

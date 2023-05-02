@@ -16,7 +16,8 @@ MonoBehaviour:
 
     Diagon alley'
   dialogues: []
-  mailData: []
+  mailData:
+  - {fileID: 11400000, guid: 6da2a758ff99b234c8e4dee64b476161, type: 2}
   roofColor: {r: 0.4481132, g: 0.8564484, b: 1, a: 1}
   wallColor: {r: 1, g: 0.5813668, b: 0, a: 1}
   mailBoxColor: {r: 0.74509805, g: 0.051522642, b: 0, a: 1}

@@ -1,0 +1,87 @@
+title: AlbanFirst
+tags:
+---
+Alban: Wait, is that our new postman ?
+Postman: It is sir.
+Alban: Well welcome. Here have a cake on the house.
+Postman: I really shouldn't.
+Alban: Nonsense, I am the baker and I would like to offer you a cake as a welcoming present.
+Postman: Well. If you insist.
+Alban: Attaboy. Now good luck on your shift.
+===
+
+title: AlbanSecond
+tags:
+---
+Alban: Here is the man.
+Alban: What will it be today ?
+Postman: Nothing, I'm on the job, just saying hi.
+Alban: Oh is that so ?
+Alban: You know you're not leaving here without a baguette, right ?
+Postman: Alright, but that's it. You're gonna sink your business by always giving away free food.
+Alban: See that's where you're wrong.
+Alban: I'm not loosing here, I'm investing.
+Postman: Investing ... in me ?
+Alban: Yes ! Like I'm investing in my son Erwan.
+Albam: ERWAN ! Come say hi !
+<<wait 2>>
+Erwan: hello s-sir, wha-what will it be today ?
+Alban: Ahahahaha, already talking like his old man.
+Alban: He wants to take over the business when he's all grown up, isn't that right.
+Erwan: Yes, dad. Can I go now ?
+Alban: Run along then.
+Postman: I should probably go too.
+Alban: Hahaha, nice try. Here is a baguette.
+===
+
+title: ErwanBadAtSchool
+tags:
+---
+Alban: Hi
+Postman: Oh, what is going on my friend ?
+Alban: It's just the kid, he's having trouble at school ?
+Postman: Getting picked on ?
+Alban: Ohh no, it's just his grades. They're so bad, the school wants him to triple the year.
+Postman: Triple ?!? What does he think of this ?
+Alban: He's telling me he doesn't care for school, that he wont need all that when he's a baker.
+Postman: What about all the accounting ?
+Alban: That's what I've been trying to tell him. He's not even listening to me.
+Alban: And now he has run off.
+Postman: I'll get him back to you soon.
+Alban: Are you sure ?
+Postman: Posiitve, and when he comes back you should start with a hug.
+Alban: I will.
+===
+
+title: AlbanTooOld
+tags:
+---
+Alban: Hi ! A chat for a snack, like usual ?
+Postman: Sure !
+Postman: So what's going on ?
+Alban: Well, we're getting old you know.
+Postman: Tell me about it.
+Alban: Yeah you would know.
+Alban: Well anyway, it's official tomorrow Erwan my son is taking over.
+Postman: I can't wait to try his cakes.
+===
+
+title: ErwanTakesOver
+tags:
+---
+Erwan: Hey postman, What will it be today ?
+Postman: It's finally the day ! Here I'll have a cake then.
+Erwan: One cake coming right up. And on the house.
+Postman: What ?! No ! Not on your first day.
+Erwan: I insist, for my father.
+Postman: What for ?
+Erwan: For keeping him company all these years. You know he always made a fresh baguette for when you would stop by.
+Postman: He did ? Really ?
+Erwan: You never notice that they were always fresh ?
+Postman: Not really, I usually eat it after my shift...
+Erwan: Hahahahahahahaha.
+Erwan: As funny as it is I won't tell him.
+Postman: Thanks, it would break his heart.
+Postman: I should go. Goodluck !
+Erwan: Don't forget your cake.
+===
